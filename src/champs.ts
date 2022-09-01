@@ -150,7 +150,7 @@ export const champs = [
         id: 22,
         name: 'Ziggs',
         img: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_0.jpg',
-        rune: 'src/assets/runes/32211-1301.png',
+        rune: 'https://league-ad-randomizer.vercel.app/src/assets/runes/32211-1301.png',
         build: 'src/assets/builds/mage1.png'
     },
     {
