@@ -3,7 +3,7 @@ import {champs} from './champs'
 import Kalec from './assets/kalec-800x525.png'
 
 function App() {
-  const [number, setNumber] = useState(22)
+  const [number, setNumber] = useState(5)
 
   function randomizer() {
     setNumber(Math.floor(Math.random() * (25 - 1 + 1) + 1))

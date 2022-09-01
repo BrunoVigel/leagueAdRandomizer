@@ -32,7 +32,7 @@ export const champs = [
         name: 'Ezreal',
         img: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg',
         rune: '/assets/runes/11211-4230.png',
-        build: '/assets/builds/ezreal.png'
+        build: '/assets/ezreal.png'
     },
     {
         id: 6,
