@@ -141,7 +141,7 @@ export const champs = [
         id: 18,
         name: 'Varus',
         img: 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_0.jpg',
-        rune: 'src/assets/runes/24214-1011.png',
+        rune: runa6,
         build: krakenVendavalCrit
     },
     {
