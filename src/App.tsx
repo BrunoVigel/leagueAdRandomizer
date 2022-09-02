@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import {champs} from './champs'
 import Kalec from './assets/kalec-800x525.png'
+import imagem from './assets/runes/11211-4230.png'
 
 function App() {
   const [number, setNumber] = useState(0)
@@ -28,6 +29,7 @@ function App() {
           <button onClick={randomizer}>Iniciar</button>
           <button onClick={reset}>Resetar</button>
         </div>
+        <img src={imagem} alt="" />
       </div>
       {
         (champs).map((item) => {
