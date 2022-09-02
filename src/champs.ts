@@ -1,4 +1,3 @@
-import Kalec from './assets/kalec-800x525.png'
 import runa1 from './assets/runes/11211-4230.png'
 import runa2 from './assets/runes/12211-3012.png'
 import runa3 from './assets/runes/12211-4230.png'

@@ -10,13 +10,18 @@ body {
 }
 
 button {
-    background: violet;
-    border: none;
-    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background: #1e6f9f;
+    color: #f2f2f2;
+    padding:0.7rem 1rem ;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     cursor:pointer;
+    transition: .2s;
 
     &:hover {
-        filter: brightness(0.8)
+        background: #4ea8de;
     }
 }
 
@@ -34,7 +39,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
 
     img {
         max-width: 30rem;
@@ -43,6 +48,29 @@ img {
     &>div {
         display: flex;
         gap: 1rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        label {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 1rem;
+            background: #1a1a1a;
+            border: 1px solid #0D0D0D;
+            box-shadow: 0 4px 4px #00000040;
+            border-radius: 8px;
+            outline: none;
+            color: white;
+            width: 28rem;
+        }
     }
 }
 
