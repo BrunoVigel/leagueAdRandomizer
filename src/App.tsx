@@ -37,10 +37,7 @@ function App() {
       <div className='home'>
         <h1>Virgeel's ADCarry Guide</h1>
         <img src={Kalec} alt="Kalec" />
-        <div>
-          <button onClick={randomizer}>Aleatório</button>
-          <button onClick={reset}>Resetar</button>
-        </div>
+        
         <form onSubmit={selectChamp}>
           <label htmlFor="champ-sugestion">Escolha um campeão</label>
           <input value={input} onChange={handleInputChange} name="champ-sugestion" list='champ-sugestions' id="champ-sugestion" />
@@ -53,6 +50,10 @@ function App() {
           </datalist>
           <button type="submit">Selecionar</button>
         </form>
+        <div>
+          <button onClick={randomizer}>Aleatório</button>
+          <button onClick={reset}>Resetar</button>
+        </div>
         
       </div>
       {
