@@ -3,7 +3,7 @@ import {champs} from './champs'
 import Kalec from './assets/kalec-800x525.png'
 
 function App() {
-  const [number, setNumber] = useState(5)
+  const [number, setNumber] = useState(0)
 
   function randomizer() {
     setNumber(Math.floor(Math.random() * (25 - 1 + 1) + 1))
@@ -12,6 +12,12 @@ function App() {
   function reset() {
     setNumber(0)
   }
+
+  champs.map((item) => {
+    if (number === item.id) {
+      console.log(item)
+    }
+  })
 
   return (
     <div className="App">
@@ -24,20 +30,20 @@ function App() {
         </div>
       </div>
       {
-        Object.entries(champs).map(([key, value]) => {
-          if (number === value.id)  {
+        (champs).map((item) => {
+          if (number === item.id)  {
             return(
-              <div className='result'>
-                <img key={value.id} src={value.img} alt="" />
-                <p>{value.name}</p>
+              <div key={item.id} className='result'>
+                <img src={item.img} alt="" />
+                <p>{item.name}</p>
                 <div className='info'>
                   <div>
                     <p>Core runes</p>
-                    <img src={value.rune} alt="" />
+                    <img src={item.rune} alt="" />
                   </div>
                   <div>
                     <p>Core items</p>
-                    <img src={value.build} alt="" />
+                    <img src={item.build} alt="" />
                   </div>
                 </div>
               </div>
