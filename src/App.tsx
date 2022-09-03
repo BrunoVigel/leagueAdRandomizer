@@ -34,10 +34,12 @@ function App() {
 
   return (
     <div className="App">
+      
+      {number === 0 ? 
       <div className='home'>
         <h1>Virgeel's ADCarry Guide</h1>
         <img src={Kalec} alt="Kalec" />
-        
+      
         <form onSubmit={selectChamp}>
           <label htmlFor="champ-sugestion">Escolha um campeão</label>
           <input value={input} onChange={handleInputChange} name="champ-sugestion" list='champ-sugestions' id="champ-sugestion" />
@@ -48,36 +50,38 @@ function App() {
               })
             }
           </datalist>
-          <button type="submit">Selecionar</button>
+          <div>
+            <button type="submit">Selecionar</button>
+            <button onClick={randomizer}>Aleatório</button>
+          </div>
         </form>
-        <div>
-          <button onClick={randomizer}>Aleatório</button>
-          <button onClick={reset}>Resetar</button>
-        </div>
-        
-      </div>
-      {
-        (champs).map((item) => {
-          if (number === item.id)  {
-            return(
-              <div key={item.id} className='result'>
-                <img src={item.img} alt="" />
-                <p>{item.name}</p>
-                <div className='info'>
-                  <div>
-                    <p>Core runes</p>
-                    <img src={item.rune} alt="" />
-                  </div>
-                  <div>
-                    <p>Core items</p>
-                    <img src={item.build} alt="" />
-                  </div>
+
+    </div> :
+      (champs).map((item) => {
+        if (number === item.id)  {
+          return(
+            <div key={item.id} className='result'>
+              <img src={item.img} alt="" />
+              <p>{item.name}</p>
+              <div className='info'>
+                <div>
+                  <p>Core runes</p>
+                  <img src={item.rune} alt="" />
+                </div>
+                <div>
+                  <p>Core items</p>
+                  <img src={item.build} alt="" />
                 </div>
               </div>
-            )
-          }
-        })
-      }
+              <button onClick={reset}>Resetar</button>
+            </div>
+          )
+        }
+      })}
+
+      
+        
+      
     </div>
   )
 }

@@ -46,10 +46,7 @@ img {
         margin-bottom: 3rem;
     }
 
-    &>div {
-        display: flex;
-        gap: 1rem;
-    }
+    
 
     form {
         display: flex;
@@ -71,6 +68,11 @@ img {
             outline: none;
             color: white;
             width: 28rem;
+        }
+
+        &>div {
+            display: flex;
+            gap: 1rem;
         }
     }
 }
