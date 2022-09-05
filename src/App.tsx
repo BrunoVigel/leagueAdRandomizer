@@ -26,6 +26,8 @@ function App() {
         setNumber(item.id)
       }
     })
+
+    setInput('')
   }
 
   
